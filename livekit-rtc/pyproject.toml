@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "livekit"
-dynamic = ["version"]
+version = "1.2.0"
 description = "Python Real-time SDK for LiveKit"
 readme = "README.md"
 requires-python = ">=3.9.0"
@@ -42,9 +42,6 @@ dependencies = [
 Documentation = "https://docs.livekit.io"
 Website = "https://livekit.io/"
 Source = "https://github.com/livekit/python-sdks/"
-
-[tool.setuptools.dynamic]
-version = { attr = "livekit.rtc.version.__version__" }
 
 [tool.setuptools.packages.find]
 include = ["livekit.*"]

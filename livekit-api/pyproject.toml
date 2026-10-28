@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "livekit-api"
-dynamic = ["version"]
+version = "1.2.2"
 description = "Python Server API for LiveKit"
 readme = "README.md"
 requires-python = ">=3.9.0"
@@ -47,9 +47,6 @@ Source = "https://github.com/livekit/python-sdks/"
 
 [tool.uv.sources]
 livekit-protocol = { workspace = true }
-
-[tool.hatch.version]
-path = "livekit/api/version.py"
 
 [tool.hatch.build.targets.wheel]
 packages = ["livekit"]
