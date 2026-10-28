@@ -34,7 +34,7 @@ jobs:
           ref: main
           fetch-depth: 0
       - id: verwalter
-        uses: lukasIO/verwalter@v0.4.0
+        uses: lukasIO/verwalter@v0.5.0
         with:
           command: release
           args: ${{ inputs.package && format('--package {0}', inputs.package) || '' }}
