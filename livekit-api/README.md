@@ -27,3 +27,5 @@ lkapi = api.LiveKitAPI.with_token("a-pre-signed-token")
 
 The url and credentials fall back to the `LIVEKIT_URL`, `LIVEKIT_API_KEY`, `LIVEKIT_API_SECRET`, and `LIVEKIT_TOKEN` environment variables. Values you pass explicitly take precedence; the environment variables are used only as a fallback for arguments you omit — an ambient `LIVEKIT_TOKEN`, for example, won't override an explicitly-provided API key and secret.
 
+
+<!-- verwalter release-cycle test -->
