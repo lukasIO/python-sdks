@@ -1,3 +1,6 @@
+# The uv workspace root is not a package.
+ignore = ["python-sdks"]
+
 # Versioning with verwalter: https://github.com/lukasIO/verwalter
 # Versions live in each pyproject.toml; livekit/*/version.py reads them from
 # package metadata.
