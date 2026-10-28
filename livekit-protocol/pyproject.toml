@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "livekit-protocol"
-dynamic = ["version"]
+version = "1.1.29"
 description = "Python protocol stubs for LiveKit"
 requires-python = ">=3.9.0"
 license = "Apache-2.0"
@@ -33,9 +33,6 @@ dependencies = [
 Documentation = "https://docs.livekit.io"
 Website = "https://livekit.io/"
 Source = "https://github.com/livekit/python-sdks/"
-
-[tool.hatch.version]
-path = "livekit/protocol/version.py"
 
 [tool.hatch.build.targets.wheel]
 packages = ["livekit"]

@@ -1,0 +1,24 @@
+# Versioning with verwalter: https://github.com/lukasIO/verwalter
+# Versions live in each pyproject.toml; livekit/*/version.py reads them from
+# package metadata.
+
+[packages.livekit-protocol]
+path = "livekit-protocol"
+versioned_files = ["livekit-protocol/pyproject.toml"]
+changelog = "livekit-protocol/CHANGELOG.md"
+tag_template = "protocol-v{version}"
+release = "tag_and_release"
+
+[packages.livekit-api]
+path = "livekit-api"
+versioned_files = ["livekit-api/pyproject.toml"]
+changelog = "livekit-api/CHANGELOG.md"
+tag_template = "api-v{version}"
+release = "tag_and_release"
+
+[packages.livekit]
+path = "livekit-rtc"
+versioned_files = ["livekit-rtc/pyproject.toml"]
+changelog = "livekit-rtc/CHANGELOG.md"
+tag_template = "rtc-v{version}"
+release = "tag_and_release"
